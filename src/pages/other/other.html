@@ -1,0 +1,26 @@
+<ion-header>
+	<ion-navbar>
+	  <ion-title>
+	    Other Page
+	  </ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngIf="navParams.data">
+    <ion-card-header>
+      navParams.data
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ navParams.data | json }}</p>
+   <button ion-button block color="primary" (click)="goBack()">
+    goBack()
+  </button>
+  <button ion-button block color="primary" navPop>
+    navPop
+  </button> 
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
